@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+html,
+body {
+    width: 100vw;
+    min-height: 100svh;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #ffd;
+    color: #111;
+    font-family: 'Lexend';
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+main {
+    flex: 1;
+    padding: 4em 2em 2em 4em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.google-play {
+    height: 4em;
+    margin-block: 1em;
+    width: fit-content;
+}
+
+.google-play > img {
+    height: 100%;
+}
+
+.screenshots {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.screenshots img {
+    width: 24em;
+    border-radius: 0.25em;
+}
+
+footer {
+    position: relative;
+    background-color: #eec;
+    padding: 2em;
+}
+
+footer > span {
+    display: block;
+    margin: 1em;
+}
+
+#background {
+    width: 40vw;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.9;
+    transform: translateY(-100%);
+}
+
+#background > img {
+    height: 100%;
+    width: 100%;
+    image-rendering: pixelated;
+    position: absolute;
+}
