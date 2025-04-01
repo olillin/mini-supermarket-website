@@ -1,0 +1,120 @@
+:root {
+    --text-color: black;
+    --table-border-color: #333;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100svw;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    padding: 8em 1em;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+main {
+    max-width: min(90vw, 40em);
+    margin-inline: auto;
+}
+
+section {
+    margin-block: 1em;
+}
+
+p {
+    line-height: 1.5em;
+    margin-block: 0em 0.75em;
+}
+
+li {
+    margin-block-end: 0.5em;
+}
+
+/* Header */
+header {
+    margin-bottom: 2em;
+}
+
+header > *:has(+.subtitle) {
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+/* Headings */
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1.5em auto 0.5em;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 1.25em auto 0.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--table-border-color);
+}
+
+th {
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 0.5em;
+}
+
+/* Inline formats */
+.explanation {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.short {
+    font-style: italic;
+}
+
+/* Table of Contents */
+.toc a {
+    color: var(--text-color);
+    text-decoration: none;
+}
